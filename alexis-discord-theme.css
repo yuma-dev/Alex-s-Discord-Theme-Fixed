@@ -1,0 +1,302 @@
+:root {
+    --app-windowbar-height: var(--server-container);
+    --sub-bar-height: 48px;
+    --app-corner-size: 0px;
+    
+    --HSL-server-icon-size: 38px;  /* Size of the server icons*/
+    --HSL-server-spacing: 10px;  /* Spacing between each server icon*/
+    --HSL-server-outer-margin: 10px;  /* Spacing between the edge of the container and the server icons.*/
+    
+    --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+    --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+    --server-container: calc(var(--server-size) + ( 2 * var(--HSL-server-outer-margin)));
+}
+.theme-dark{
+    --background-primary-transparent: rgba(54, 57, 63, 0.74);
+}
+.theme-light{
+    --background-primary-transparent: rgba(255, 255, 255, 0.74);
+}
+
+#app-mount .guilds-1SWlCJ{
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0) 50px);
+    overflow: hidden;
+    height: calc(100vw - 150px)!important;
+}
+.tree-2wKJdG{
+    overflow: hidden;
+}
+
+/*
+#app-mount .guilds-1SWlCJ:after {
+    content: "";
+    position: relative;
+    display: flex;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: -20px;
+    height: 160px;
+    background-color: rgba(255, 0, 0, 0.473);
+}*/
+
+
+/* Shrink server banners to header instead of disappearing. */
+[class*="animatedContainer-"] {
+    opacity: 1 !important;
+    transition: opacity .5s ;
+}
+[class*="animatedContainer-"] > [class*="bannerImage-"] {
+    transition: margin .5s;
+}
+:not([class*="bannerVisible-"]) > [class*="animatedContainer-"] {
+    opacity: .35 !important;
+    height: 138px;
+}
+:not([class*="bannerVisible-"]) > [class*="animatedContainer-"] [class*="bannerImage-"] {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body, #app-mount, .backdrop-1wrmKB{
+    overflow: hidden !important;
+    border-radius: var(--app-corner-size) !important;
+}
+html, body{
+    background:none;
+}
+html{
+    padding: 0px;
+}
+#app-mount{
+    background-color: var(--background-primary) !important;
+}
+.container-1r6BKw {
+    height: inherit;
+}
+.topControls-KKImPZ{
+    margin-top: 24px;
+}
+
+
+/*Window Bar*/
+.withFrame-haYltI {
+    --frame-gap: 4px;
+    height: calc( var(--app-windowbar-height) - var(--frame-gap) );
+    margin-top: var(--frame-gap);
+    user-select: none;
+    pointer-events: none;
+    background: unset;
+    position: fixed;
+    width: 100%;
+}
+
+.winButton-iRh8-Z {
+    top: calc( -1 * var(--frame-gap) );
+    width: 45px;
+    height: 30px;
+    cursor: default;
+}
+.header-2V-4Sw {
+    height: var(--sub-bar-height);
+}
+.searchBar-6Kv8R2 {
+    height: var(--sub-bar-height);
+}
+
+
+
+/*Hide Help Button*/
+a[href^="https://support.discord.com"]{
+    display: none;
+}
+
+.topic-TCb_qw{
+    width: fit-content;
+}
+
+
+/*Server Header*/
+.platform-win .sidebar-2K8pFh {
+    border-radius: 0 !important;
+}
+
+:root {
+    --background-message-hover: none;
+    --background-mentioned: none;
+    --background-mentioned-hover: none;
+    /*--background-tertiary: var(--background-secondary);*/
+}
+.mentioned-xhSam7:before{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+/*Sidebar discord icon fix*/
+.listItem-GuPuDH {
+    margin: 8px 0 8px 0;
+}
+/*Window Bar Discord Logo*/
+.wordmarkWindows-1v0lYD {
+    padding: 8px 9px 6px;
+    display: none;
+}
+.closeButton-3cJIM4 {
+    right: unset;
+    left: 0;
+}
+.winButtonClose-1HsbF-{
+    border-top-right-radius: var(--app-corner-size);
+}
+.listItemWrapper-KhRmzM,
+.searchBar-6Kv8R2 .searchBarComponent-32dTOx,
+.topic-TCb_qw,
+.app-2rEoOp button,
+.listItem-GuPuDH,
+#app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+}
+
+
+/*Blurred header bar*/
+.container-1r6BKw.themed-ANHk51 {
+    background-color: var(--background-primary-transparent) !important;
+    backdrop-filter: blur(128px);
+    height: var(--sub-bar-height);
+}
+.scroller-2LSbBU {
+    top: calc( -1 * var(--sub-bar-height));
+}
+.scrollerContent-WzeG7R{
+    top: var(--sub-bar-height);
+}
+
+.bottomControls-lIJyYL, .topControls-KKImPZ,
+.root-217Brm.idle-1j3olu{
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+}
+.scroller-2LSbBU::-webkit-scrollbar-track, .contentRegionScroller-26nc1e::-webkit-scrollbar-track{
+    margin-top: var(--sub-bar-height);
+}
+/*.root-217Brm.idle-1j3olu .topControls-KKImPZ {
+    opacity: 1;
+}
+
+.videoControls-24w7Xp{
+   top: calc( -1 * var(--app-windowbar-height));
+}
+
+
+.callContainer-36WRfH, .centerControls-2E5oVA{
+    overflow: visible;
+    margin-top: var(--app-windowbar-height);
+}
+*/
+
+.root-217Brm.idle-1j3olu .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyEnd-2E6vba.alignStretch-DpGPf3.noWrap-3jynv6{
+    opacity: 0;
+}
+.root-217Brm .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyEnd-2E6vba.alignStretch-DpGPf3.noWrap-3jynv6{
+    opacity: 1;
+}
+
+.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyEnd-2E6vba.alignStretch-DpGPf3.noWrap-3jynv6{
+    padding-top: 16px;
+}
+
+html:hover ~ .app-1q1i1E .topControls-KKImPZ{
+    opacity: 1;
+}
+
+.titleBar-AC4pGV:hover{
+
+}
+
+
+
+
+/*Hide Nitro Button in Home*/
+.channel-2QD9_O.container-2Pjhx-[href="/store"],
+.channel-2QD9_O.container-2Pjhx-[href="/discovery"]
+{
+    display: none;
+}
+
+
+/*Memberlist Button*/
+:root{
+    --member-list-width: 240px;
+}
+.members-1998pB {
+    width: var(--member-list-width);
+}
+.iconWrapper-2OrFZ1.clickable-3rdHwn.selected-1GqIat[aria-label="Member List"]{
+    padding: 4px;
+    background: var(--background-primary);
+}
+.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Member List"]{
+    position: fixed;
+    /* top: calc( 100vh - 32px - 30px); */
+    top: calc( var(--sub-bar-height) + 12px);
+    right: 16px;
+    border-radius: 48px;
+    background: var(--background-secondary);
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    margin: 0;
+    height: 32px;
+    width: unset;
+
+    display: flex;
+    -webkit-box-pack: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    user-select: none;
+}
+.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Member List"]:before{
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='arrow-gKvcEx leftCaret-18vKap controlIcon-35oS15' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-rule='evenodd' clip-rule='evenodd' d='M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z'%3E%3C/path%3E%3C/svg%3E");
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+}
+.iconWrapper-2OrFZ1.clickable-3rdHwn.selected-1GqIat[aria-label="Member List"]:before{
+    transform: rotate(-90deg);
+}
+.iconWrapper-2OrFZ1.clickable-3rdHwn[aria-label="Member List"]:hover {
+    background: var(--background-tertiary);
+}
+
+.iconWrapper-2OrFZ1.clickable-3rdHwn.selected-1GqIat[aria-label="Member List"] svg{
+    display: none;
+}
