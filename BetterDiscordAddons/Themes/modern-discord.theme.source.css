@@ -529,20 +529,26 @@
 .layerContainer-yqaFcK{
     z-index: 1000;
 }
-.avatarWrapper-2yR4wp[aria-expanded="true"] ~ .directionRow-3v3tfG button[aria-label="User Settings"] {
+
+/*
+    .panels-j1Uci_ .container-3baos1 .directionRow-3v3tfG button:nth-child(3)
+    .directionRow-3v3tfG button[aria-label="User Settings"]
+*/
+
+.avatarWrapper-2yR4wp[aria-expanded="true"] ~ .directionRow-3v3tfG button:nth-child(3) {
     display: block;
 }
-.avatarWrapper-2yR4wp[aria-expanded="false"] ~ .directionRow-3v3tfG button[aria-label="User Settings"] {
+.avatarWrapper-2yR4wp[aria-expanded="false"] ~ .directionRow-3v3tfG button:nth-child(3) {
     display: block;
     user-select: none;
     pointer-events: none;
 }
-.avatarWrapper-2yR4wp[aria-expanded="true"] ~ .directionRow-3v3tfG button[aria-label="User Settings"] .contents-18-Yxp{
+.avatarWrapper-2yR4wp[aria-expanded="true"] ~ .directionRow-3v3tfG button:nth-child(3) .contents-18-Yxp{
     transform: scale(1);
     opacity: 1;
     transition: transform .12s ease-out, opacity .12s ease-out;
 }
-.avatarWrapper-2yR4wp[aria-expanded="false"] ~ .directionRow-3v3tfG button[aria-label="User Settings"] .contents-18-Yxp{
+.avatarWrapper-2yR4wp[aria-expanded="false"] ~ .directionRow-3v3tfG button:nth-child(3) .contents-18-Yxp{
     transform: scale(.01);
     opacity: 0;
 }
@@ -584,7 +590,7 @@
 }
 */
 
-.directionRow-3v3tfG button[aria-label="User Settings"] {
+.directionRow-3v3tfG button:nth-child(3) {
     position: fixed;
     top: calc( (var(--server-outer-margin) * 2) + var(--user-avatar-size) + 8px);
     right: calc( -10000px + var(--user-avatar-size) + var(--username-button-width) + var(--user-outer-right-margin) - 8px);
@@ -610,16 +616,16 @@
     ); /*(<top>, <right>, <bottom>, <left>)*/
            
 }
-.directionRow-3v3tfG button[aria-label="User Settings"]:hover {
+.directionRow-3v3tfG button:nth-child(3):hover {
     background-color: transparent;
     color: var(--interactive-normal);
 }
-.directionRow-3v3tfG button[aria-label="User Settings"] svg{
+.directionRow-3v3tfG button:nth-child(3) svg{
     margin-left: -3px;
     width: 16px !important;
     height: 16px !important;
 }
-.directionRow-3v3tfG button[aria-label="User Settings"] .contents-18-Yxp{
+.directionRow-3v3tfG button:nth-child(3) .contents-18-Yxp{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: grid;
@@ -639,12 +645,12 @@
     transform-origin: top center;
 
 }
-.directionRow-3v3tfG button[aria-label="User Settings"] .contents-18-Yxp:hover{
+.directionRow-3v3tfG button:nth-child(3) .contents-18-Yxp:hover{
     background-color: var(--brand-experiment-560);
     color: #fff;
 }
 
-.directionRow-3v3tfG button[aria-label="User Settings"] .contents-18-Yxp:after{
+.directionRow-3v3tfG button:nth-child(3) .contents-18-Yxp:after{
     content: "User Settings";
     grid-area: status span 2;
     line-height: 18px;
@@ -706,9 +712,12 @@
     --control-area-bottom-margin: 24px;
 }
 
-/*Hide Krisp*/button[aria-label="Noise Suppression powered by Krisp"] {
+/*Hide Krisp*/
+/*button[aria-label="Noise Suppression powered by Krisp"] {}*/
+.panels-j1Uci_ .wrapper-24pKcD .container-1giJp5 .horizontal-1ae9ci button:first-of-type{
     display: none;
 }
+
 /*Call Info*/.connection-3KRENF .inner-tyMogq{
     display: none!important;
 }
