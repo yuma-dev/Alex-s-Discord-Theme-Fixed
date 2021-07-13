@@ -1,3 +1,12 @@
+/*Theme Info*/
+.info-1VyQPT:after{
+    top: 16px;
+    content: "Alexis Jonsson Modern Discord Theme - version 21.07.13";
+    color: var(--text-muted);
+    position: relative;
+}
+
+
 :root {
     --user-avatar-size: 32px;
     --app-windowbar-height: var(--server-container);
@@ -923,6 +932,10 @@
     box-sizing: border-box;
     border: none !important;
     display: flex;
+}
+
+.voiceUsers-YsH5Db{
+    display: none;
 }
 /*Hide stream button when not in a call*/
 .panels-j1Uci_ .wrapper-24pKcD:empty{
@@ -1899,8 +1912,21 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
     /*background: rgba(34, 34, 34, 0.6);*/
     /*border-color: rgba(51, 51, 51, 0.9);*/
     background: var(--background-primary-transparent);
-    border-color: var(--background-secondary-alt);
+    /*border-color: var(--background-secondary-alt);*/
+    border-width: 0 !important;
 }
+
+/*Code embed*/
+.textContainer-C0szpm, .footer-2yA7Ep{
+    border-width: 0 !important;
+}
+.textContainer-C0szpm{
+    background: var(--background-primary-transparent);
+}
+
+
+
+
 .theme-dark .header-Hg_qNF{
     color: var(--text-muted);
 }
@@ -2053,3 +2079,5 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
     user-select: none;
     pointer-events: none;
 }*/
+
+
