@@ -2065,25 +2065,6 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
 
 
 
-/*::::::::::::::::::: Custom Server ::::::::::::::::::::::
-
-.container-3w7J-x[aria-label="o.o (server)"]:after{
-    content: "";
-    background-image: url("https://cms.qut.edu.au/__data/assets/image/0004/699790/centre-for-the-digital-economy-2020.jpg");
-    background-size: contain;
-    background-color: rgb(24, 27, 37);
-    opacity: .05;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    user-select: none;
-    pointer-events: none;
-}*/
-
-
 /*::::::::::::::: Settings Window ::::::::::::::::::*/
 /*Blurred Sidebar*/
 .sidebarRegionScroller-3MXcoP{
@@ -2101,3 +2082,121 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
 .theme-dark .expandedInfo-3kfShd{
     background-color: var(--background-secondary);
 }
+
+
+
+
+
+/*::::::::::::::::::: Custom Server ::::::::::::::::::::::*/
+
+
+/*
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"]:after{
+    content: "";
+    background-image: url("https://cms.qut.edu.au/__data/assets/image/0004/699790/centre-for-the-digital-economy-2020.jpg");
+    background-size: contain;
+    background-color: rgb(24, 27, 37);
+    opacity: .1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+*/
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .container-1taM1r.clickable-25tGDB{ 
+
+}
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .content-1x5b-n .iconContainer-1BBaeJ{
+    display: none;
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .mainContent-u_9PKf {
+    padding: 6px 0;
+    text-transform: capitalize;
+}
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .content-1x5b-n{
+    padding: 0 4px;
+}
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .content-1x5b-n .name-23GUGE{
+    color: var(--header-secondary);
+    font-size: 15px;
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .content-1x5b-n a:before {
+    background-color: var(--header-secondary);
+}
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .modeSelected-346R90 .content-1x5b-n .name-23GUGE {
+    color: var(--interactive-active);
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .modeSelected-346R90 .content-1x5b-n a:before {
+    background-color: var(--interactive-active);
+}
+
+
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .modeSelected-346R90 .content-1x5b-n,
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .modeSelected-346R90:hover .content-1x5b-n {
+    background-color: var(--brand-experiment);
+}
+
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] .containerDefault--pIXnN.selected-3LIHYU .mainContent-u_9PKf{
+    cursor: default !important;
+}
+
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a[href="/channels/863937888851853342/864486524745416724"]:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23FFFFFF'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z'/%3E%3C/svg%3E");
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a[href="/channels/863937888851853342/864486250537943050"]:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z'/%3E%3C/svg%3E");
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a[href="/channels/863937888851853342/863937888851853345"]:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z'/%3E%3C/svg%3E");
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z'/%3E%3C/svg%3E");
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a[data-list-item-id="channels___863937888851853346"]:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z'/%3E%3C/svg%3E");
+}
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a[href="/channels/863937888851853342/864535429273485313"]:before {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cg%3E%3Crect fill='none' height='24' width='24'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M5,20h14v-2H5V20z M19,9h-4V3H9v6H5l7,7L19,9z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+
+.container-3w7J-x[aria-label="Alexis Modern Theme (server)"] a:before {
+    -webkit-mask-image: var(--icon);
+    mask-image: var(--icon);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    top: unset; bottom: unset; right: unset; left: unset;
+    position: relative;
+    margin-right: 4px;
+}
+
+
+
+/*
+.modeSelected-346R90 .name-23GUGE{
+    
+}
+.modeSelected-346R90 .name-23GUGE{
+    color: var(--header-secondary);
+    color: var(--interactive-hover);
+}
+
+/*::::::::::::::::::::::::*/
