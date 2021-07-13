@@ -1127,11 +1127,14 @@
 /*.panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG{
     display: none;
 }*/
-.panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG button:not([aria-label="User Settings"]),
+
+/*.panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG button:not([aria-label="User Settings"]),*/
+.panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG button:not(:last-child),
 .panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG:before,
 .panels-j1Uci_ .wrapper-24pKcD:empty ~ .container-3baos1 .directionRow-3v3tfG:after {
     display: none;
 }
+
 
 
 
@@ -2082,6 +2085,7 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
 
 
 /*::::::::::::::: Settings Window ::::::::::::::::::*/
+/*Blurred Sidebar*/
 .sidebarRegionScroller-3MXcoP{
     /*background: var(--background-secondary);*/
     background-color: rgba(0, 0, 0, .25);
@@ -2089,4 +2093,11 @@ html:hover ~ .app-1q1i1E .topControls-KKImPZ{
 }
 .standardSidebarView-3F1I7i {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.theme-dark .paymentPane-3bwJ6A, .theme-dark .payment-xT17Mq, .theme-dark .codeRedemptionRedirect-1wVR4b, .theme-dark .paginator-166-09 {
+    background-color: var(--background-secondary);
+}
+.theme-dark .expandedInfo-3kfShd{
+    background-color: var(--background-secondary);
 }
