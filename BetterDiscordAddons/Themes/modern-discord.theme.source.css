@@ -1,5 +1,3 @@
-/*:::::::::::::::::::::::::::::::::*/
-
 /*Theme Info*/
 .info-1VyQPT:after{
     top: 16px;
@@ -743,10 +741,15 @@
 }
 
 /*Hide Krisp*/
-/*button[aria-label="Noise Suppression powered by Krisp"] {}*/
+/*button[aria-label="Noise Suppression powered by Krisp"] {}
 .panels-j1Uci_ .wrapper-24pKcD .container-1giJp5 .horizontal-1ae9ci button:first-of-type{
     display: none;
+}*/
+.panels-j1Uci_ .wrapper-24pKcD .container-1giJp5 .horizontal-1ae9ci button[aria-label*="Krisp"]{
+    display: none;
 }
+
+
 
 /*Call Info*/.connection-3KRENF .inner-tyMogq{
     display: none!important;
